@@ -24,10 +24,22 @@ function EnviaFormulario(){
 $(document).foundation();
 
 $("#btnEnviarForm").click(function(){
-	EnviaFormulario();
+		EnviaFormulario();
+});
+
+$("#btnAbreForm").click(function(e){
+	if(IsMobile()){
+		location.href="mailto:edno.moraes+website@gmail.com";
+	}else{
+		$("#contactform").foundation("reveal","open");
+	}
 });
 
 function IsEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
+}
+
+function IsMobile(){
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
