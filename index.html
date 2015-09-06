@@ -65,8 +65,6 @@
 	</ul>
 </footer>
 <div id="contactform" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <form action="http://formspree.io/edno.moraes+website@gmail.com" method="POST">
-
 	<div class="row collapse prefix-radius">
         <div class="small-3 columns">
           <span class="prefix">Nome</span>
@@ -93,18 +91,25 @@
           <textarea></textarea>
         </div>
       </div>
-      <input type="submit" class="button radius" value="Enviar">
+      <input type="submit" class="button radius" value="Enviar" id="btnEnviarForm">
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
-  
-
-</form>
+  <input type="text" name="_gotcha" style="display:none" />
 </div>
 <script src="scripts/vendor/jquery.js"></script>
 <script src="scripts/vendor/fastclick.js"></script>
 <script src="scripts/foundation.min.js"></script>
 <script>
   $(document).foundation();
+
+  $("#btnEnviarForm").click(function(){
+  	$.ajax({
+	    url: "http://formspree.io/edno.moraes+website@gmail.com", 
+	    method: "POST",
+	    data: {message: "hello!"},
+	    dataType: "json"
+	});
+  });
 </script>
 </body>
 </html>
