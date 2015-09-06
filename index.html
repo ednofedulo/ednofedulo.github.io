@@ -70,7 +70,7 @@
           <span class="prefix">Nome</span>
         </div>
         <div class="small-9 columns">
-          <input type="text" placeholder="Seu nome" name="nome">
+          <input type="text" placeholder="Seu nome" name="nome" id="nome">
         </div>
       </div>
 
@@ -79,7 +79,7 @@
           <span class="prefix">E-mail</span>
         </div>
         <div class="small-9 columns">
-          <input type="text" placeholder="Seu e-mail" name="_replyto">
+          <input type="text" placeholder="Seu e-mail" name="_replyto" id="email">
         </div>
       </div>
 
@@ -88,28 +88,19 @@
           <span class="prefix"></span>
         </div>
         <div class="small-9 columns">
-          <textarea></textarea>
+          <textarea id="conteudo"></textarea>
         </div>
       </div>
       <input type="submit" class="button radius" value="Enviar" id="btnEnviarForm">
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
-  <input type="text" name="_gotcha" style="display:none" />
+  <input type="text" name="_gotcha" style="display:none" id="gotcha" />
 </div>
 <script src="scripts/vendor/jquery.js"></script>
 <script src="scripts/vendor/fastclick.js"></script>
 <script src="scripts/foundation.min.js"></script>
 <script>
-  $(document).foundation();
-
-  $("#btnEnviarForm").click(function(){
-  	$.ajax({
-	    url: "http://formspree.io/edno.moraes+website@gmail.com", 
-	    method: "POST",
-	    data: {message: "hello!"},
-	    dataType: "json"
-	});
-  });
-</script>
+  function EnviaFormulario(){var a=$("#nome").val(),b=$("#email").val(),c=$("#gotcha").val(),d=$("#conteudo").val();if(!a||!b||!d)return alert("Todos os campos s\xe3o obrigat\xf3rios!");var b={nome:a,email:b,_gotcha:c,conteudo:d};$.ajax({url:"http://formspree.io/edno.moraes+website@gmail.com",method:"POST",data:b,dataType:"json",complete:function(){alert("E-mail enviado!"),$("#contactform").foundation("reveal","close")}})}$(document).foundation(),$("#btnEnviarForm").click(function(){EnviaFormulario()});
+  </script>
 </body>
 </html>
