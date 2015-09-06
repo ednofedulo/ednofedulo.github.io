@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Edno Fedulo</title>
+	<script src="scripts/vendor/modernizr.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<header id="cabecalho">
+	<h1>Edno Fedulo</h1>
+	<h2>Analista de Sistemas</h2>
+</header>
+<section class="introducao">
+<h2>Sobre mim</h2>
+	<div class="small-6 small-centered columns">
+		<p>Programador / Analista de Sistemas. Apaixonado por desenvolvimento e novas tecnologias, principalmente web. Atualmente trabalho na Login Informática desenvolvendo sistemas e ferramentas em java e c#.</p>
+		<a href="#" data-reveal-id="contactform" class="button radius">// Entre em contato</a>
+	</div>
+</section>
+<section class="habilidades">
+	<h2>Principais Habilidades</h2>
+	<div class="row">
+		<div class="small-6 columns">
+		<i class="fa fa-globe fa-5x"></i>
+			<h3>Web</h3>
+			<p>Sites e aplicativos com HTML5, CSS3, JavaScript e ASP.NET</p>
+		</div>
+		<div class="small-6 columns">
+		<i class="fa fa-desktop fa-5x"></i>
+			<h3>Desktop</h3>
+			<p>Desenvolvimento de aplicações desktop em C#.</p>
+		</div>
+	</div>
+</section>
+<section class="experiencias">
+	<h2>Últimas Experiências</h2>
+	<div class="row">
+		<div class="small-4 columns">
+			<h3>Login Informática</h3>
+			<p>Empresa de fabricação e comercialização de produtos de informática.</p>
+			<p>Desenvolvimento e manutenção de ERP e Webservice (Java) e do Sistema de frente de caixa e site (C#) </p>
+		</div>
+		<div class="small-4 columns">
+			<h3>SAEB</h3>
+			<p>Secretaria de Administração do Estado da Bahia</p>
+			<p>Desenvolvimento de diversas aplicações em ASP.NET e manutenção do GLPI (PHP)</p>
+		</div>
+		<div class="small-4 columns">
+			<h3>MPBA - Capgemini</h3>
+			<p>Ministério Publico do Estado da Bahia</p>
+			<p>Desenvolvimento de aplicações web com ASP.NET</p>
+		</div>
+	</div>
+</section>
+<footer>
+	<ul class="social">
+		<li><a href="http://twitter.com/ednofedulo" target="new"><i class="fa fa-twitter fa-2x"></i></a></li>
+		<li><a href="http://instagram.com/ednofedulo" target="new"><i class="fa fa-instagram fa-2x"></i></a></li>
+		<li><a href="http://facebook.com/ednofedulo" target="new"><i class="fa fa-facebook fa-2x"></i></a></li>
+		<li><a href="mailto:edno.moraes+website@gmail.com"><i class="fa fa-send-o fa-2x"></i></a></li>
+	</ul>
+</footer>
+<div id="contactform" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <form action="http://formspree.io/edno.moraes+website@gmail.com" method="POST">
+
+	<div class="row collapse prefix-radius">
+        <div class="small-3 columns">
+          <span class="prefix">Nome</span>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" placeholder="Seu nome" name="nome">
+        </div>
+      </div>
+
+  <div class="row collapse prefix-radius">
+        <div class="small-3 columns">
+          <span class="prefix">E-mail</span>
+        </div>
+        <div class="small-9 columns">
+          <input type="text" placeholder="Seu e-mail" name="_replyto">
+        </div>
+      </div>
+
+   <div class="row collapse prefix-radius">
+        <div class="small-3 columns">
+          <span class="prefix"></span>
+        </div>
+        <div class="small-9 columns">
+          <textarea></textarea>
+        </div>
+      </div>
+      <input type="submit" class="button radius" value="Enviar">
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+  
+
+</form>
+</div>
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/vendor/fastclick.js"></script>
+<script src="scripts/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+</body>
+</html>
