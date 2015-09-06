@@ -114,3 +114,10 @@ a, a:hover, a:visited{
 #contactform label{
 	clear: both;
 }
+
+#contactform textarea{
+	font-size: 12px;
+	font-family: sans-serif;
+	width: 100%;
+	min-height: 200px;
+}
