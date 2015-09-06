@@ -16,6 +16,7 @@ body{
 	text-align: center;
 	padding: 55px;
 	color: #747474;
+	background: linear-gradient(white, #fafafa);
 }
 
 #cabecalho h1{
@@ -52,14 +53,16 @@ section:last-of-type{
 }
 
 section h2{
-	color: inherit;
 	font-weight: bolder;
 	letter-spacing: 5px;
 	margin: 25px;
 }
 
-section h3{
+h1, h2, h3, h4, h5, h6{
 	color: inherit;
+}
+
+section h3{
 	font-weight: bold;
 }
 
