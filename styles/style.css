@@ -14,7 +14,7 @@ body{
 
 #cabecalho{
 	text-align: center;
-	padding: 55px;
+	padding: 55px 0 55px 0;
 	color: #747474;
 	background: linear-gradient(white, #fafafa);
 }
@@ -41,7 +41,7 @@ p{
 }
 
 section{
-	padding: 15px;
+	padding: 15px 0 15px 0;
 	text-align: center;
 	min-height: 400px;
 	border-bottom: 1px dashed rgba(0,0,0,.2);
