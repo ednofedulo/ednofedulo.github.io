@@ -109,7 +109,7 @@ footer{
 .social li:hover{
 	opacity: 1;
 }
-a, a:hover, a:visited{
+a, a:hover, a:visited:not(.button){
 	color: inherit;
 	text-decoration: inherit;
 }
