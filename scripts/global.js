@@ -16,6 +16,9 @@ function EnviaFormulario(){
 		,dataType:"json"
 		,complete:function(){
 			alert("E-mail enviado!");
+			$("#nome").val("");
+			$("#email").val("");
+			$("#conteudo").val("");
 			$("#contactform").foundation("reveal","close");
 		}
 	})

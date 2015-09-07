@@ -119,8 +119,10 @@ a, a:hover, a:visited:not(.button){
 }
 
 #contactform textarea{
-	font-size: 12px;
-	font-family: sans-serif;
 	width: 100%;
 	min-height: 200px;
+}
+
+.buttons{
+	text-align: center;
 }
