@@ -3,6 +3,13 @@
 @font-face {
     font-family: Alcubierre;
     src: url(../assets/Alcubierre.otf) format("opentype");
+    src: url('../assets/alcubierre-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/alcubierre-webfont.woff2') format('woff2'),
+         url('../assets/alcubierre-webfont.woff') format('woff'),
+         url('../assets/alcubierre-webfont.ttf') format('truetype'),
+         url('../assets/alcubierre-webfont.svg#alcubierreregular') format('svg');
+
+
 }
 
 body{
