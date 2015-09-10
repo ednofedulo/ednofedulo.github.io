@@ -51,12 +51,7 @@ section{
 	padding: 15px 0 15px 0;
 	text-align: center;
 	min-height: 400px;
-	border-bottom: 1px dashed rgba(0,0,0,.2);
 	background: #fafafa;
-}
-
-section:last-of-type{
-	border-bottom: none;
 }
 
 section h2{
@@ -67,6 +62,7 @@ section h2{
 
 h1, h2, h3, h4, h5, h6{
 	color: inherit;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 section h3{
@@ -80,16 +76,17 @@ section i{
 
 .introducao{
 	color: #00a1f1;
-	
+	background-color: rgba(0, 161, 241, 0.1);
 }
 
 .habilidades{
 	color: #f65314;
+	background-color: rgba(246, 83, 20, 0.1);
 }
 
 .experiencias{
 	color:#71bb00;
-
+	background-color: rgba(113, 187, 0, 0.1);
 }
 footer{
 	background-color: #747474;
