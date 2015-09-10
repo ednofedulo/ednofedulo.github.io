@@ -130,3 +130,6 @@ a, a:hover, a:visited:not(.button){
 .buttons{
 	text-align: center;
 }
+.icon{
+	width: 120px;
+}
