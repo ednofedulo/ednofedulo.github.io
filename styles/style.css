@@ -52,6 +52,7 @@ section{
 	text-align: center;
 	min-height: 400px;
 	background: #fafafa;
+	color:white;
 }
 
 section h2{
@@ -75,22 +76,19 @@ section i{
 }
 
 .introducao{
-	color: #00a1f1;
-	background-color: rgba(0, 161, 241, 0.1);
+	color: white;
+	background-color: #19acca;
 }
 
 .habilidades{
-	color: #f65314;
-	background-color: rgba(246, 83, 20, 0.1);
+	background-color: #e06d5e;
 }
 
 .experiencias{
-	color:#71bb00;
-	background-color: rgba(113, 187, 0, 0.1);
+	background-color: #69aa90;
 }
 footer{
 	background-color: #747474;
-	color:white;
 }
 
 .social{
@@ -113,8 +111,8 @@ footer{
 .social li:hover{
 	opacity: 1;
 }
-a, a:hover, a:visited:not(.button){
-	color: inherit;
+a, a:hover, a:visited, a:visited:not(.button){
+	color: white;
 	text-decoration: inherit;
 }
 
