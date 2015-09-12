@@ -13,14 +13,34 @@ function EnviaFormulario(){
 		,method:"POST"
 		,data:b
 		,dataType:"json"
-		,complete:function(){
+		,beforeSend: function() {
+			disableForm();
+			$("#contactform").find("#btnEnviarForm").val("Enviando...");
+		}
+		,success: function(data) {
 			$("#nome").val("");
 			$("#email").val("");
 			$("#conteudo").val("");
 			$("#contactform").foundation("reveal","close");
 			$("#modalConfirmacao").foundation("reveal","open");
 		}
+		,error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$("#contactform").append('<div class="alert alert--error">Ops, there was an error.</div>');
+		}
+		,complete: function(){
+			$("#contactform").find("#btnEnviarForm").val("Enviar");
+			enableForm();
+		}
 	})
+}
+
+function disableForm(){
+	$("#contactform").find('input, textarea').prop("disabled", true);
+}
+
+function enableForm(){
+	$("#contactform").find('input, textarea').prop("disabled", false);
 }
 
 $("#formContato").submit(function(event){
