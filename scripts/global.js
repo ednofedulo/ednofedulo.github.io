@@ -1,11 +1,10 @@
+$(document).foundation();
+
 function EnviaFormulario(){
 	var a=$("#nome").val(),b=$("#email").val(),c=$("#gotcha").val(),d=$("#conteudo").val();  
 	
 	if(!a||!b||!d)
-		return alert("Todos os campos s\xe3o obrigat\xf3rios!"); 
-	
-	if(!IsEmail(b)) 
-		return alert("Email Inválido"); 
+		return;
 
 	var b={nome:a,email:b,_gotcha:c,conteudo:d};
 
@@ -15,19 +14,18 @@ function EnviaFormulario(){
 		,data:b
 		,dataType:"json"
 		,complete:function(){
-			alert("E-mail enviado!");
 			$("#nome").val("");
 			$("#email").val("");
 			$("#conteudo").val("");
 			$("#contactform").foundation("reveal","close");
+			$("#modalConfirmacao").foundation("reveal","open");
 		}
 	})
 }
 
-$(document).foundation();
-
-$("#btnEnviarForm").click(function(){
-		EnviaFormulario();
+$("#formContato").submit(function(event){
+	EnviaFormulario();
+	event.preventDefault();
 });
 
 $("#btnAbreForm").click(function(e){

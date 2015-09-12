@@ -72,43 +72,49 @@
 	</ul>
 </footer>
 <div id="contactform" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-	<h2 id="modalTitle">Enviar Email</h2>
-	<div class="row collapse prefix-radius">
-        <div class="small-3 columns">
-          <span class="prefix">Nome</span>
-        </div>
-        <div class="small-9 columns">
-          <input type="text" placeholder="Seu nome" name="nome" id="nome">
-        </div>
-	</div>
+	<h2 id="modalTitle">Entrar em contato</h2>
+	<form id="formContato">
+		<div class="row collapse prefix-radius">
+	        <div class="small-3 columns">
+	          <span class="prefix">Nome</span>
+	        </div>
+	        <div class="small-9 columns">
+	          <input type="text" placeholder="Seu nome" name="nome" id="nome" required="required">
+	        </div>
+		</div>
 
-  	<div class="row collapse prefix-radius">
-        <div class="small-3 columns">
-          <span class="prefix">Email</span>
-        </div>
-        <div class="small-9 columns">
-          <input type="text" placeholder="Seu Email" name="_replyto" id="email">
-        </div>
-  	</div>
+	  	<div class="row collapse prefix-radius">
+	        <div class="small-3 columns">
+	          <span class="prefix">Email</span>
+	        </div>
+	        <div class="small-9 columns">
+	          <input type="email" placeholder="Seu Email" name="_replyto" id="email" required="required">
+	        </div>
+	  	</div>
 
-   	<div class="row collapse prefix-radius">
-        <div class="small-3 columns">
-          <span class="prefix">Mensagem</span>
-        </div>
-        <div class="small-9 columns">
-          <textarea id="conteudo"></textarea>
-        </div>
-  	</div>
-  	<div class="row buttons">
-  		<div class="small-12 columns">
-  			<input type="submit" class="button radius" value="Enviar" id="btnEnviarForm">		
-  		</div>
-  	</div>
-      
+	   	<div class="row collapse prefix-radius">
+	        <div class="small-3 columns">
+	          <span class="prefix">Mensagem</span>
+	        </div>
+	        <div class="small-9 columns">
+	          <textarea id="conteudo" name="conteudo" required="required"></textarea>
+	        </div>
+	  	</div>
+	  	<div class="row buttons">
+	  		<div class="small-12 columns">
+	  			<input type="submit" class="button radius" value="Enviar" id="btnEnviarForm">		
+	  		</div>
+	  	</div>
+	      <input type="text" name="_gotcha" style="display:none" id="gotcha" />
+	</form>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
-  <input type="text" name="_gotcha" style="display:none" id="gotcha" />
-</div>
+
+	<div id="modalConfirmacao" class="reveal-modal small" data-reveal aria-labelledby="confirmacaoLabel" aria-hidden="true" role="dialog">
+		<h2 id="confirmacaoLabel">Email enviado com sucesso</h2>
+		<p>Obrigado pelo contato.</p>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
 <script src="scripts/vendor/jquery.js"></script>
 <script src="scripts/vendor/fastclick.js"></script>
 <script src="scripts/foundation.min.js"></script>

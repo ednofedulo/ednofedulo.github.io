@@ -8,8 +8,6 @@
          url('../assets/alcubierre-webfont.woff') format('woff'),
          url('../assets/alcubierre-webfont.ttf') format('truetype'),
          url('../assets/alcubierre-webfont.svg#alcubierreregular') format('svg');
-
-
 }
 
 body{
@@ -87,6 +85,7 @@ section i{
 .experiencias{
 	background-color: #69aa90;
 }
+
 footer{
 	background-color: #747474;
 }
@@ -116,10 +115,6 @@ a, a:hover, a:visited, a:visited:not(.button){
 	text-decoration: inherit;
 }
 
-#contactform label{
-	clear: both;
-}
-
 #contactform textarea{
 	width: 100%;
 	min-height: 200px;
@@ -128,6 +123,11 @@ a, a:hover, a:visited, a:visited:not(.button){
 .buttons{
 	text-align: center;
 }
+
 .icon{
 	width: 120px;
+}
+
+.reveal-modal .close-reveal-modal{
+	top: 1.5rem;
 }
