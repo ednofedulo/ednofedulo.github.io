@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: Alcubierre;
     src: url(../assets/Alcubierre.otf) format("opentype");
@@ -12,16 +10,21 @@
 
 body{
 	color: #747474;
-	font-family: Alcubierre;
-	font-size: x-large;
+	font-family: Alcubierre;	
 	letter-spacing: 1px;
 }
 
 #cabecalho{
 	text-align: center;
-	padding: 55px 0 55px 0;
 	color: #747474;
-	background: linear-gradient(white, #fafafa);
+	position: absolute;
+	z-index: 1000;
+	top: 50%;
+	width: 600px;
+	height: 300px;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -300px;
 }
 
 #cabecalho h1{
@@ -30,33 +33,8 @@ body{
 }
 
 #cabecalho h2{
-	margin-top: 10px;
 	font-size: large;
-}
-
-.coluna{
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 10px;
-}
-p{
-	line-height: 2;
-	font-size: 18px;
-}
-
-section{
-	padding: 15px 0 15px 0;
-	text-align: center;
-	min-height: 400px;
-	background: #fafafa;
-	color:white;
-}
-
-section h2{
-	font-weight: bolder;
-	letter-spacing: 5px;
-	margin: 25px;
+	font-weight: lighter;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -64,29 +42,11 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-section h3{
-	font-weight: bold;
-}
-
-section i{
-	margin:10px;
-	opacity: .5;
-}
-
-.introducao{
-	color: white;
-	background-color: #19acca;
-}
-
-.habilidades{
-	background-color: #e06d5e;
-}
-
-.experiencias{
-	background-color: #69aa90;
-}
-
 footer{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
 	background-color: #747474;
 }
 
@@ -94,7 +54,6 @@ footer{
 	list-style: none;
 	text-align: center;
 	margin: 0;
-	padding: 10px;
 	position: relative;
 }
 
@@ -110,24 +69,19 @@ footer{
 .social li:hover{
 	opacity: 1;
 }
+
 a, a:hover, a:visited, a:visited:not(.button){
 	color: white;
 	text-decoration: inherit;
 }
 
-#contactform textarea{
-	width: 100%;
-	min-height: 200px;
+.something-semantic {
+  display: table;
+  width: 100%;
+}
+.something-else-semantic {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.buttons{
-	text-align: center;
-}
-
-.icon{
-	width: 120px;
-}
-
-.reveal-modal .close-reveal-modal{
-	top: 1.5rem;
-}
