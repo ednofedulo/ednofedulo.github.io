@@ -18,13 +18,12 @@ body{
 	text-align: center;
 	color: #747474;
 	position: absolute;
-	z-index: 1000;
 	top: 50%;
-	width: 600px;
+	width: 235px;
 	height: 300px;
 	left: 50%;
 	margin-top: -150px;
-	margin-left: -300px;
+	margin-left: -117px;
 }
 
 #cabecalho h1{
