@@ -1,0 +1,61 @@
+body{
+	padding-bottom: 0 !important;
+}
+
+footer{
+	background-color: #222;
+	padding: 20px 0;
+}
+
+.input-inverse{
+	    background-color: #252525;
+    border-color: #252525;
+    color: #9c9c9c;
+}
+
+.carousel-inner > .item > img{
+	object-fit: cover;
+}
+
+.carousel{
+	    margin-top: -20px;
+}
+
+.carousel-caption {
+    padding-bottom: 120px;
+}
+
+.img-circle{
+	object-fit: cover;
+}
+
+.main-text
+{
+    position: absolute;
+    top: 250px;
+    width: 96.66666666666666%;
+    color: #FFF;
+
+}
+.main-text h1, .main-text h3{
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    font-weight: bolder !important;
+}
+.carousel-control{
+	z-index: 2;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.galeria{
+	overflow: hidden !important;
+}
+
+.navbar{
+	padding: 20px 0;
+}
