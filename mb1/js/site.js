@@ -4,8 +4,7 @@ jQuery(document).ready(function(){
         ,tiles_type:"columns"
     }); 
     jQuery("#gallery-produtos").unitegallery({
-        gallery_theme:"tiles",
-        tiles_type:"columns"
+        gallery_theme:"tilesgrid"
     }); 
 }); 
         
