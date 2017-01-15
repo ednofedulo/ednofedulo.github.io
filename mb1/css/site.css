@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "Book Antiqua V2";
+  src: url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.eot"); /* IE9*/
+  src: url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/3efd8e6a45b3f893f54399c6bf4aba68.svg#Book Antiqua V2") format("svg"); /* iOS 4.1- */
+}
+
 body{
+    font-family:'Book Antiqua V2' !important;
 	padding-bottom: 0 !important;
+    color: #f5d76b;
+    background-color: #222;
 }
 
 footer{
@@ -63,4 +76,8 @@ footer{
 
 .navbar{
 	padding: 20px 0;
+}
+
+p{
+    font-size: 16px;
 }
