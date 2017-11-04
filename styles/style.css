@@ -29,6 +29,9 @@ body{
 #cabecalho h1{
 	letter-spacing: 5px;
 	font-weight: bold;
+	color: rgb(74, 197, 195);
+background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c3ff, #ffff1c) repeat scroll 0% 0% padding-box text;
+-webkit-text-fill-color: transparent;
 }
 
 #cabecalho h2{
