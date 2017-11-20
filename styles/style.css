@@ -30,9 +30,13 @@ body{
 	letter-spacing: 5px;
 	font-weight: bold;
 	color: rgb(74, 197, 195);
-background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c3ff, #ffff1c) repeat scroll 0% 0% padding-box text;
--webkit-text-fill-color: transparent;
+  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    background-image: -webkit-linear-gradient(45deg, #00c3ff, #ffff1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
 }
+
 
 #cabecalho h2{
 	font-size: large;
