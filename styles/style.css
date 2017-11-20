@@ -26,14 +26,17 @@ body{
 	margin-left: -117px;
 }
 
-#cabecalho h1{
+#cabecalho h1 {
 	letter-spacing: 5px;
 	font-weight: bold;
-	color: rgb(74, 197, 195);
-  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
-    background-image: -webkit-linear-gradient(45deg, #00c3ff, #ffff1c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+  	color: rgb(74, 197, 195);
+}
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+#cabecalho h1{
+	
+    	background-image: -webkit-linear-gradient(left, #00c3ff, #ffff1c);
+    	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
   }
 }
 
