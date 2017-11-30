@@ -28,7 +28,7 @@ body{
 
 #cabecalho h1 {
 	letter-spacing: 5px;
-	font-weight: bold;
+	font-weight: 200;
   	color: rgb(74, 197, 195);
 }
 @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
