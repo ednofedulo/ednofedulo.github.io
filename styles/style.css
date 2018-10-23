@@ -34,7 +34,7 @@ body{
 @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
 #cabecalho h1{
 	
-    	background-image: -webkit-linear-gradient(left, #00c3ff, #ffff1c);
+    	background-image: -webkit-linear-gradient(left, #ff2626, #fffb26);
     	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
   }
