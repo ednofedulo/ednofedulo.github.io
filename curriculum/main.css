@@ -1,0 +1,140 @@
+@page {
+    size: A4;
+}
+
+body {
+    margin-top: 35px;
+    color: gray;
+}
+body i {
+    font-family:'FontAwesome'!important;
+    font-style: normal;
+    font-size: x-large;
+    color: gray;
+}
+
+section {
+    margin-bottom: 1em;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    border: none;
+}
+
+.xablau {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 290px;
+    background:
+#282537;
+background-image: -webkit-radial-gradient(top, circle cover, #3C3B52 0%, #252233 80%);
+background-image: -moz-radial-gradient(top, circle cover, #3C3B52 0%, #252233 80%);
+background-image: -o-radial-gradient(top, circle cover, #3C3B52 0%, #252233 80%);
+background-image: radial-gradient(top, circle cover, #3C3B52 0%, #252233 80%);
+    z-index: 0;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+    color: white;
+}
+
+#header .name {
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+    font-weight: 100;
+}
+
+.picture {
+    background-image: url('circle_me_small.jpg');
+    background-repeat: no-repeat;
+    height: 110px;
+    /* margin-left: 50px;
+    margin-top: 50px; */
+    z-index: 1;
+}
+
+#contacts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+}
+
+#contacts div {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+#contacts .header {
+    color: #6c757d;
+    font-style: italic;
+}
+
+h4, h5 {
+    color: black;
+}
+
+#academic {
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-column-gap: 10px;
+}
+
+
+
+.level-1:before {
+    content: "\2605\2606\2606\2606\2606";
+    position: absolute;
+    font-size: large;
+    color: #ffc107;
+}
+
+.level-2:before {
+    content: "\2605\2605\2606\2606\2606";
+    position: absolute;
+    font-size: large;
+    color: #ffc107;
+}
+
+.level-3:before {
+    content: "\2605\2605\2605\2606\2606";
+    position: absolute;
+    font-size: large;
+    color: #ffc107;
+}
+
+.level-4:before {
+    content: "\2605\2605\2605\2605\2606";
+    position: absolute;
+    font-size: large;
+    color: #ffc107;
+}
+
+.level-5:before {
+    content: "\2605\2605\2605\2605\2605";
+    position: absolute;
+    font-size: large;
+    color: #ffc107;
+}
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+    /* .picture {
+        background-image: url('') !important;
+        width: 0px !important;
+    } */
+
+    body {
+        margin-top: 0px;
+    }
+}
