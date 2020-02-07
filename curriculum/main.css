@@ -91,37 +91,37 @@ h4, h5 {
 
 .level-1:before {
     content: "\2605\2606\2606\2606\2606";
-    position: absolute;
+    
     font-size: large;
-    color: #ffc107;
+    color: #007bff;
 }
 
 .level-2:before {
     content: "\2605\2605\2606\2606\2606";
-    position: absolute;
+    
     font-size: large;
-    color: #ffc107;
+    color: #007bff;
 }
 
 .level-3:before {
     content: "\2605\2605\2605\2606\2606";
-    position: absolute;
+    
     font-size: large;
-    color: #ffc107;
+    color: #007bff;
 }
 
 .level-4:before {
     content: "\2605\2605\2605\2605\2606";
-    position: absolute;
+    
     font-size: large;
-    color: #ffc107;
+    color: #007bff;
 }
 
 .level-5:before {
     content: "\2605\2605\2605\2605\2605";
-    position: absolute;
+    
     font-size: large;
-    color: #ffc107;
+    color: #007bff;
 }
 
 @media print {
