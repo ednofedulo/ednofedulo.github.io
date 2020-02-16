@@ -19,6 +19,7 @@ section {
 .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
     border: none;
+    border-radius: .50em;
 }
 
 .xablau {
@@ -83,7 +84,7 @@ h4, h5 {
 
 #academic {
     display: grid;
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto auto;
     grid-column-gap: 10px;
 }
 
