@@ -1,21 +1,17 @@
-@font-face {
-    font-family: Alcubierre;
-    src: url(../assets/Alcubierre.otf) format("opentype");
-    src: url('../assets/alcubierre-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/alcubierre-webfont.woff2') format('woff2'),
-         url('../assets/alcubierre-webfont.woff') format('woff'),
-         url('../assets/alcubierre-webfont.ttf') format('truetype'),
-         url('../assets/alcubierre-webfont.svg#alcubierreregular') format('svg');
-}
 
 body{
+	font-family: 'Helvetica Neue','Source Sans Pro', sans-serif;
 	color: #747474;
-	font-family: Alcubierre;	
 	letter-spacing: 1px;
+	display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
 
 #cabecalho{
 	text-align: center;
+	/* text-align: center;
 	color: #ffffff;
 	position: absolute;
 	top: 50%;
@@ -23,32 +19,19 @@ body{
 	height: 300px;
 	left: 50%;
 	margin-top: -150px;
-	margin-left: -117px;
+	margin-left: -117px; */
 }
 
 #cabecalho h1 {
 	letter-spacing: 5px;
 	font-weight: 200;
-  	color: rgb(74, 197, 195);
+  	color:#30d158
 }
-@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
-#cabecalho h1{
-	
-    	background-image: -webkit-linear-gradient(left, #ff2626, #fffb26);
-    	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-  }
-}
-
 
 #cabecalho h2{
 	font-size: large;
 	font-weight: lighter;
-}
-
-h1, h2, h3, h4, h5, h6{
-	color: inherit;
-	font-family: 'Source Sans Pro', sans-serif;
+	color: rgb(242,242,247);
 }
 
 footer{
