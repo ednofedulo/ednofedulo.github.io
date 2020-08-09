@@ -1,31 +1,24 @@
 
 body{
-	font-family: 'Helvetica Neue','Source Sans Pro', sans-serif;
-	color: #747474;
+	font-family: 'Helvetica Neue','Lato', sans-serif;
+	background-color: black;
 	letter-spacing: 1px;
 	display: grid;
   height: 100vh;
   margin: 0;
-  place-items: center center;
+	place-items: center center;
+	
 }
 
 #cabecalho{
 	text-align: center;
-	/* text-align: center;
-	color: #ffffff;
-	position: absolute;
-	top: 50%;
-	width: 235px;
-	height: 300px;
-	left: 50%;
-	margin-top: -150px;
-	margin-left: -117px; */
 }
 
 #cabecalho h1 {
 	letter-spacing: 5px;
-	font-weight: 200;
-  	color:#30d158
+	font-weight: 800;
+	color: white;
+	
 }
 
 #cabecalho h2{
@@ -34,47 +27,42 @@ body{
 	color: rgb(242,242,247);
 }
 
-footer{
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	background-color: #747474;
-}
-
-.social{
+.links{
 	list-style: none;
-	text-align: center;
+	background-color: #111;
+	border-radius: 15px;
 	margin: 0;
 	padding: 0;
-	position: relative;
 }
 
-.social li{
-	padding: 10px;
-	display: inline-block;
-	opacity: .5;
-	transition-property: opacity;
-  	transition-duration: 0.2s;
-  	transition-timing-function: linear;
+li {
+	border-bottom: 1px solid #000;
+	font-weight: 200;
+	transition: 0.3s;
+}
+li:hover {
+	background-color: #222;
 }
 
-.social li:hover{
-	opacity: 1;
+.links li:first-child{
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
 }
 
-a, a:hover, a:visited, a:visited:not(.button){
+.links li:last-child {
+	border: none;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+
+li a {
+	width: 100%;
+	text-decoration: none; 
 	color: white;
-	text-decoration: inherit;
+	display: block;
+	padding: 15px;
 }
 
-.something-semantic {
-  display: table;
-  width: 100%;
+li a:visited {
+	color:white;
 }
-.something-else-semantic {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
