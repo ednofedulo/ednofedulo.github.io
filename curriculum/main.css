@@ -38,9 +38,9 @@ background-image: radial-gradient(top, circle cover, #3C3B52 0%, #252233 80%);
 
 #header {
     display: grid;
-    grid-template-columns: 110px auto;
-    align-items: center;
-    color: white;
+    /* grid-template-columns: auto; */
+    /* align-items: center; */
+    /* color: white; */
 }
 
 #header .name {
