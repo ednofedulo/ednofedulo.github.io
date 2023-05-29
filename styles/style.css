@@ -9,7 +9,7 @@ body{
 }
 
 .avatar {
-	width: 50vw;
+	width: 70vw;
 	padding-bottom: 50px;
 }
 
@@ -65,8 +65,8 @@ li a {
 	display: block;
 	padding: 15px;
 	display: flex;
-  justify-content: space-between;
-  align-items: center;
+  	justify-content: space-between;
+  	align-items: center;
 }
 
 li a:visited {
