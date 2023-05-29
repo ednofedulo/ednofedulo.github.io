@@ -4,14 +4,13 @@ body{
 	background-color: black;
 	letter-spacing: 1px;
 	display: grid;
-	height: 100vh;
 	margin: 0;
-	place-items: center center;	
+	place-items: center center;
 }
 
 .avatar {
-	border-radius: 50%!important;
-	width: 200px;
+	width: 50vw;
+	padding-bottom: 50px;
 }
 
 #cabecalho{
@@ -22,7 +21,7 @@ body{
 	letter-spacing: 5px;
 	font-weight: 800;
 	color: white;
-	
+
 }
 
 #cabecalho h2{
@@ -61,7 +60,7 @@ li:hover {
 }
 
 li a {
-	text-decoration: none; 
+	text-decoration: none;
 	color: white;
 	display: block;
 	padding: 15px;
